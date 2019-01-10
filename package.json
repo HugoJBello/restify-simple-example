@@ -1,0 +1,16 @@
+{
+  "name": "restify-example",
+  "version": "1.0.0",
+  "description": "simple template for a restify project with routes in separated files and mocha tests.",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --timeout 10000"},
+  "author": "Hugo J. Bello",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "mocha": "^5.2.0",
+    "restify": "^7.5.0"
+  }
+}
