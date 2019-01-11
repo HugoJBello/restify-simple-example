@@ -25,7 +25,7 @@ describe('App', () => {
 
     describe('/route2Post', () => {
         const param = "blablabla";
-        it('the response should query the introduced param', function (done) {
+        it('the response should extract the introduced param in the body of the request', function (done) {
             chai.request(server)
                 .post(`/route2Post`)
                 .send({param1:param})
