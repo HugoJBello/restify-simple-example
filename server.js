@@ -1,7 +1,10 @@
 const restify = require('restify');
 const routes = require("./routes");
+const morgan  = require('morgan');
 
 const server = restify.createServer({ name: 'api' });
+
+server.use(morgan('combined'));
 server.use(restify.plugins.queryParser());
 server.use(restify.plugins.bodyParser({
         mapParams: true
